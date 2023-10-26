@@ -2,9 +2,19 @@
 	"name": "ashvinpal",
 	"version": "1.0.0",
 	"description": "My portfolio & playground",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
 	"author": "Ashvin-Pal",
-	"license": "ISC"
+	"license": "ISC",
+	"scripts": {
+		"dev": "turbo dev",
+		"build": "turbo build",
+		"start": "turbo start",
+		"lint": "turbo lint"
+	},
+	"engines": {
+		"node": ">=18",
+		"pnpm": ">=8"
+	},
+	"dependencies": {
+		"turbo": "^1.10.16"
+	}
 }
