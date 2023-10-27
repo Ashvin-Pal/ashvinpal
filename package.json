@@ -8,13 +8,17 @@
 		"dev": "turbo dev",
 		"build": "turbo build",
 		"start": "turbo start",
-		"lint": "turbo lint"
+		"lint": "turbo lint",
+		"prepare": "husky install"
 	},
 	"engines": {
 		"node": ">=18",
 		"pnpm": ">=8"
 	},
-	"dependencies": {
-		"turbo": "^1.10.16"
+	"devDependencies": {
+		"@commitlint/cli": "^18.2.0",
+		"@commitlint/config-conventional": "^18.1.0",
+		"turbo": "^1.10.16",
+		"husky": "^8.0.0"
 	}
 }
