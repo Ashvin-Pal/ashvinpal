@@ -13,6 +13,8 @@ function getAllFolderNames(directoryPath) {
 }
 
 const appsAllowedScopes = getAllFolderNames("/apps");
+const packagesAllowedScopes = getAllFolderNames("/packages");
+const allScopes = [...appsAllowedScopes, ...packagesAllowedScopes];
 
 module.exports = {
 	extends: ["@commitlint/config-conventional"],
@@ -21,6 +23,6 @@ module.exports = {
 	 * @see https://commitlint.js.org/#/reference-rules
 	 */
 	rules: {
-		"scope-enum": [2, "always", appsAllowedScopes],
+		"scope-enum": [2, "always", allScopes],
 	},
 };
