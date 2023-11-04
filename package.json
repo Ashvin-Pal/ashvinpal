@@ -1,25 +1,27 @@
 {
-	"name": "ashvinpal",
-	"version": "1.0.0",
-	"description": "My portfolio & playground",
-	"author": "Ashvin-Pal",
-	"license": "ISC",
-	"scripts": {
-		"dev": "turbo dev",
-		"build": "turbo build",
-		"start": "turbo start",
-		"lint": "turbo lint",
-		"prepare": "husky install"
-	},
-	"engines": {
-		"node": ">=18",
-		"pnpm": ">=8"
-	},
-	"devDependencies": {
-		"@commitlint/cli": "^18.2.0",
-		"@commitlint/config-conventional": "^18.1.0",
-		"turbo": "^1.10.16",
-		"husky": "^8.0.0",
-		"tsconfig": "workspace:*"
-	}
+  "name": "ashvinpal",
+  "version": "1.0.0",
+  "description": "My portfolio & playground",
+  "author": "Ashvin-Pal",
+  "license": "ISC",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "start": "turbo start",
+    "lint": "turbo lint",
+    "prepare": "husky install",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json,js}\""
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.2.0",
+    "@commitlint/config-conventional": "^18.1.0",
+    "husky": "^8.0.0",
+    "prettier": "^3.0.3",
+    "tsconfig": "workspace:*",
+    "turbo": "^1.10.16"
+  }
 }
