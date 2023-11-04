@@ -1,0 +1,5 @@
+{
+  "[typescript, javascript, typescriptreact, javascriptreact, json, md]": {
+    "editor.formatOnSave": true
+  }
+}
