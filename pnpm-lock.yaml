@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@ashvinpal/tsconfig':
+        specifier: workspace:*
+        version: link:packages/tsconfig
       '@commitlint/cli':
         specifier: ^18.2.0
         version: 18.2.0(typescript@5.2.2)
@@ -20,9 +23,6 @@ importers:
       prettier:
         specifier: ^3.0.3
         version: 3.0.3
-      tsconfig:
-        specifier: workspace:*
-        version: link:packages/tsconfig
       turbo:
         specifier: ^1.10.16
         version: 1.10.16
@@ -39,6 +39,12 @@ importers:
         specifier: ^18
         version: 18.2.0(react@18.2.0)
     devDependencies:
+      '@ashvinpal/eslint-config-custom':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config-custom
+      '@ashvinpal/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@next/eslint-plugin-next':
         specifier: 14.0.0
         version: 14.0.0
@@ -57,18 +63,12 @@ importers:
       eslint:
         specifier: ^8
         version: 8.52.0
-      eslint-config-ashvinpal:
-        specifier: workspace:*
-        version: link:../../packages/eslint-config-ashvinpal
       postcss:
         specifier: ^8
         version: 8.4.31
       tailwindcss:
         specifier: ^3
         version: 3.3.5
-      tsconfig:
-        specifier: workspace:*
-        version: link:../../packages/tsconfig
       typescript:
         specifier: ^5
         version: 5.2.2
@@ -85,6 +85,12 @@ importers:
         specifier: ^18
         version: 18.2.0(react@18.2.0)
     devDependencies:
+      '@ashvinpal/eslint-config-custom':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config-custom
+      '@ashvinpal/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@next/eslint-plugin-next':
         specifier: 14.0.0
         version: 14.0.0
@@ -103,23 +109,17 @@ importers:
       eslint:
         specifier: ^8
         version: 8.52.0
-      eslint-config-ashvinpal:
-        specifier: workspace:*
-        version: link:../../packages/eslint-config-ashvinpal
       postcss:
         specifier: ^8
         version: 8.4.31
       tailwindcss:
         specifier: ^3
         version: 3.3.5
-      tsconfig:
-        specifier: workspace:*
-        version: link:../../packages/tsconfig
       typescript:
         specifier: ^5
         version: 5.2.2
 
-  packages/eslint-config-ashvinpal:
+  packages/eslint-config-custom:
     dependencies:
       '@vercel/style-guide':
         specifier: ^5.0.0
