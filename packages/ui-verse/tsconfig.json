@@ -1,0 +1,4 @@
+{
+  "extends": ["@ashvinpal/tsconfig/next.json"],
+  "include": ["./stories"]
+}
